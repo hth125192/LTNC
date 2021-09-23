@@ -1,0 +1,36 @@
+1 bool majority (bool a, bool b, bool c)
+  {
+    return ((a&&b&&c)||(a&&b&&!c)||(a&&!b&&c)||(!a&&b&&c));
+  }
+
+2 bool eq (int a[], int b[], int n)
+  {
+    for (int i=0; i<n; i++)
+        if (a[i]-b[i]) return false;
+    return true;
+  }
+
+3 1000
+4 1717
+5 all true
+6 cout?
+7 d
+8 a
+9 b
+10 b
+11 d
+12 b
+13 d
+14 d
+15 b
+16 d
+17 a
+18 b
+19 b
+20 c
+21 c
+22 c
+23 c
+24 a
+25 a
+26 b

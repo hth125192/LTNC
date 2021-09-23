@@ -1,0 +1,15 @@
+//1
+	khong
+//2
+	khong
+//3
+	tuy TH
+//4
+	Base case, loi de quy,... >> bo nho va thoi gian chay
+//5
+	6 4 2 2 1 1 4 3 1 1 3 6
+//6
+	khong co base case
+//7
+	tich
+	luy thua

@@ -1,0 +1,59 @@
+//1
+	nhan xet: &x = &y
+
+	vi tri cua stack frame cho ham f va g khi no chay la trung nhau
+	x, y deu la bien kieu int va la bien duoc khai bao dau tien
+	=> dpcm
+
+//2
+	b) int main( )
+	{
+   		int a[4] = {0, 1, 2, 3};
+   		for (int i = 0; i < 4 ; i++) {
+      			cout << &a[i] << " : " << a[i] << endl;
+   		}
+   		return 0;
+	}
+
+	c) int main( )
+	{
+   		double a[4] = {0, 1, 2, 3};
+   		for (int i = 0; i < 4 ; i++) {
+      			cout << &a[i] << " : " << a[i] << endl;
+   		}
+   		return 0;
+	}
+	
+	d) in ra 2 dia chi chenh lech nhau 16 
+
+//3
+	void swap_pointers(char** x, char** y)
+	{
+   		char *tmp;
+   		tmp = *x;
+   		*x = *y;
+   		*y = tmp;
+	}
+	int main()
+	{
+   		char a[] = "I should print second";
+   		char b[] = "I should print first";
+
+   		char *s1 = a;
+   		char *s2 = b;
+   		swap_pointers(&s1,&s2);
+   		cout << "s1 is " << s1 << endl;
+   		cout << "s2 is " << s2 << endl;
+   		return 0;
+	}
+
+//4
+	int main()  {
+   	char **s = new char *;        //truy cap vung nho khong xac dinh (= new)
+   	char foo[] = "Hello World";
+   	*s = foo;
+   	printf("s is %s\n",*s);       //in ra dia chi (s -> *s)
+   	s[0] = foo;
+   	printf("s[0] is %s\n",s[0]);
+   	return(0);
+	}

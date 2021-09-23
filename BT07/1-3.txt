@@ -1,0 +1,8 @@
+//1
+	*pc = B, p3 = 0x5678
+	*p3 = A, p3 = 0x1234
+	*p1 = B, p1 = 0x1234
+//2
+	*p = 5
+//3
+	p mang kieu gia tri la double nhung lai la con tro chi dia chi
